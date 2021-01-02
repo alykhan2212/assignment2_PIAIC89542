@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Task 4</title>
+	<style type="text/css">
+		table{
+			margin-top: 30px;
+			display: none;
+		}
+	</style>
+
+</head>
+<body>
+
+<fieldset>
+  <legend>Add Marks</legend>
+  <label>Math</label>
+  <input type="number" id="math"><br><br>
+  
+  <label>English</label>
+  <input type="number" id="eng"><br><br>
+  
+  <label>Computer</label>
+  <input type="number" id="comp"><br><br>
+  <span style="color: red" id="err"></span>
+  
+  <input type="submit" value="Generate Result" onclick="generateMarksheet()">
+ </fieldset>
+
+
+ 	<table border="1" width="400px" cellpadding="10" cellspacing="10">
+            <tr>
+               <td id="R1">Subjects</td>
+               <td id="R2">Total Marks</td>
+               <td id="R3">Marks Obtained</td>
+            </tr>
+            <tr>
+                <td id="hh6">Math</td>
+                <td>100</td>
+                <td id="s1"></td>
+             </tr>
+             <tr>
+                <td id="hh6">English</td>
+                <td>100</td>
+                <td id="s2"></td>
+             </tr>
+             <tr>
+                <td id="hh6">Computer</td>
+                <td>100</td>
+                <td id="s3"></td>
+             </tr>
+             <tr>
+                <td>Total</td>
+                <td>300</td>
+                <td id="totalObt"></td>
+             </tr>
+             <tr>
+                <td colspan="2">Percentage</td>
+                <td id="percentage"></td>
+             </tr>
+             <tr>
+                <td colspan="2">Grade</td>
+                <td id="grade"></td>
+             </tr>
+             <tr>
+                <td colspan="2">Remarks</td>
+                <td id="remarks"></td>
+             </tr>
+         </table>
+
+</body>
+<script type="text/javascript" src="task4.js"></script>
+</html>
